@@ -1,0 +1,32 @@
+Stylish Page Navigation for Blogger
+Author : http://www.basiclue.com/
+
+Put the Codes below exactly before </body>
+
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style type='text/css'>
+.blog-pager,#blog-pager{font-family:arial, serif;font-weight:bold;font-size:12px;width:98%;}
+.showpageNum a,.showpage a {background:transparent url(http://3.bp.blogspot.com/-quBO8HJ2-bg/TrrjJINNSQI/AAAAAAAAAGM/T9oojmG1K_o/s1600/lite.png) repeat-x;background-position:0px -0px;border:2px solid #555;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+margin:0px 1px 0 1px;padding:3px 10px;color:#222;line-height:30px;cursor:pointer;}
+
+.showpageNum a:hover,.showpage a:hover {
+background-image:url(http://3.bp.blogspot.com/-quBO8HJ2-bg/TrrjJINNSQI/AAAAAAAAAGM/T9oojmG1K_o/s1600/lite.png) repeat-x;background-position:0px -30px;
+border:2px solid #555;-webkit-border-radius:3px;
+-moz-border-radius:3px;border-radius:3px;color:#111;-text-decoration:underline;}
+
+.showpageOf{margin:0 8px 0 0;
+background:transparent url(http://3.bp.blogspot.com/-quBO8HJ2-bg/TrrjJINNSQI/AAAAAAAAAGM/T9oojmG1K_o/s1600/lite.png) repeat-x;background-position:0px -0px;border:2px solid #555;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;line-height:30px;padding:3px 10px;color:#222;}
+
+.showpagePoint {background:transparent url(http://3.bp.blogspot.com/-quBO8HJ2-bg/TrrjJINNSQI/AAAAAAAAAGM/T9oojmG1K_o/s1600/lite.png) repeat-x;background-position:0px -30px;margin:0 3px 0 3px;padding:3px 10px;line-height:30px;cursor:pointer;white-space:nowrap;border:2px solid #111;-webkit-border-radius:3px;  -moz-border-radius:3px;border-radius:3px;color:#777;text-decoration:underline;font-weight:bold;
+</style>
+<script type='text/javascript'>
+var pageCount=6;
+var displayPageNum=6;
+var upPageWord =&#39;Previous&#39;;
+var downPageWord =&#39;Next&#39;;
+</script>
+<script src='https://rawgit.com/dvs11/baseclue/master/dvs-bg-pagenav.js' type='text/javascript'/>
+</b:if>
+</b:if>

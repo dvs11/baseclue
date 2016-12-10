@@ -1,0 +1,41 @@
+Stylish Page Navigation for Blogger
+Author : http://www.basiclue.com/
+
+Put the Codes below exactly before </body>
+
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style type='text/css'>.blog-pager,#blog-pager{font-family:arial, serif;font-weight:bold;font-size:12px;width:98%;}
+.showpageNum a,.showpage a {
+ background:transparent url(http://3.bp.blogspot.com/-jx9IKa-4vog/TrqvgwWzXHI/AAAAAAAAAF0/n6jjqE6iLv8/s1600/darkblue.png) repeat-x;
+ border:2px solid #5C8CFB;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;
+ margin:0px 1px 0 1px;padding:3px 10px;color:#FFF;line-height:30px;cursor:pointer;white-space:nowrap;
+ }
+.showpageNum a:hover,.showpage a:hover {
+background-image:url(http://3.bp.blogspot.com/-jx9IKa-4vog/TrqvgwWzXHI/AAAAAAAAAF0/n6jjqE6iLv8/s1600/darkblue.png) repeat-x;
+ border:2px solid #5C8CFB;-webkit-border-radius:7px;
+  -moz-border-radius:7px;border-radius:7px;color:#e4905a;text-decoration:none;
+ }
+.showpageOf{
+ margin:0 8px 0 0;
+background:transparent url(http://3.bp.blogspot.com/-jx9IKa-4vog/TrqvgwWzXHI/AAAAAAAAAF0/n6jjqE6iLv8/s1600/darkblue.png) repeat-x;border:2px solid #5C8CFB;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;
+line-height:30px;padding:3px 10px;color:#FFF;
+ }
+.showpagePoint {
+ background:transparent url(http://3.bp.blogspot.com/-jx9IKa-4vog/TrqvgwWzXHI/AAAAAAAAAF0/n6jjqE6iLv8/s1600/darkblue.png) repeat-x;
+ margin:0 3px 0 3px;padding:3px 10px;
+ line-height:30px;cursor:pointer;white-space:nowrap;
+ border:2px solid #5C8CFF;-webkit-border-radius:7px;
+  -moz-border-radius:7px;border-radius:7px;color:#e4905a;text-decoration:underline;font-weight:bold;
+ }
+</style>
+<script type='text/javascript'>
+var pageCount=6;
+var displayPageNum=6;
+var upPageWord =&#39;Previous&#39;;
+var downPageWord =&#39;Next&#39;;
+</script>
+<script src='https://rawgit.com/dvs11/baseclue/master/dvs-bg-pagenav.js' type='text/javascript'/>
+</b:if>
+</b:if>

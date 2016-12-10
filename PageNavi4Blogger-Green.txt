@@ -1,0 +1,31 @@
+Stylish Page Navigation for Blogger
+Author : http://www.basiclue.com/
+Put the Codes below exactly before </body>
+
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style type='text/css'>
+.blog-pager,#blog-pager{font-family:arial, serif;font-weight:bold;font-size:12px;width:98%;}
+.showpageNum a,.showpage a {background:transparent url(http://1.bp.blogspot.com/-kLtghYQy-Ao/TrrjlqQLU8I/AAAAAAAAAGU/lJ-qXnp5Td0/s1600/greendiamond.png) repeat-x;background-position:0px -0px;border:2px solid #555;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;margin:0px 1px 0 1px;padding:3px 10px;color:#EEE;line-height:30px;cursor:pointer;-webkit-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);-moz-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);}
+
+.showpageNum a:hover,.showpage a:hover {
+background-image:url(http://1.bp.blogspot.com/-kLtghYQy-Ao/TrrjlqQLU8I/AAAAAAAAAGU/lJ-qXnp5Td0/s1600/greendiamond.png) repeat-x;background-position:0px -30px;
+border:2px solid #006666;-webkit-border-radius:20px;
+-moz-border-radius:20px;border-radius:20px;color:#FFF;-text-decoration:underline;}
+
+.showpageOf{margin:0 8px 0 0;
+background:transparent url(http://1.bp.blogspot.com/-kLtghYQy-Ao/TrrjlqQLU8I/AAAAAAAAAGU/lJ-qXnp5Td0/s1600/greendiamond.png) repeat-x;background-position:0px -0px;border:2px solid #555;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;line-height:30px;padding:3px 10px;color:#EEE;-webkit-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);-moz-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);}
+
+.showpagePoint {background:transparent url(http://1.bp.blogspot.com/-kLtghYQy-Ao/TrrjlqQLU8I/AAAAAAAAAGU/lJ-qXnp5Td0/s1600/greendiamond.png) repeat-x;background-position:0px -30px;margin:0 3px 0 3px;padding:3px 10px;line-height:30px;cursor:pointer;white-space:nowrap;border:2px solid #007777;-webkit-border-radius:20px;  -moz-border-radius:20px;border-radius:20px;color:#EEE;text-decoration:underline;font-weight:bold;-webkit-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);-moz-box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);box-shadow:6px 6px 12px 4px rgba(0,0,0, 0.2);}
+</style>
+<script type='text/javascript'>
+var pageCount=6;
+var displayPageNum=6;
+var upPageWord =&#39;Previous&#39;;
+var downPageWord =&#39;Next&#39;;
+</script>
+<script src='https://rawgit.com/dvs11/baseclue/master/dvs-bg-pagenav.js' type='text/javascript'/>
+</b:if>
+</b:if>
+
